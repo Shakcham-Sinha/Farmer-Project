@@ -10,9 +10,9 @@ export function Marketplace() {
       price: 320.50,
       quantity: 1000,
       unit: 'kg',
-      location: 'Kansas, USA',
+      location: 'Sambalpur, Odisha',
       sellerId: 'seller1',
-      sellerName: 'John Smith',
+      sellerName: 'Shivanshu Barik',
       imageUrl: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80',
       createdAt: new Date(),
     },
@@ -22,9 +22,9 @@ export function Marketplace() {
       price: 450.75,
       quantity: 2000,
       unit: 'kg',
-      location: 'California, USA',
+      location: 'Sambalpur, Odisha',
       sellerId: 'seller2',
-      sellerName: 'Maria Garcia',
+      sellerName: 'Sameer Barik',
       imageUrl: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80',
       createdAt: new Date(),
     },
@@ -61,9 +61,9 @@ export function Marketplace() {
               </select>
               <select className="px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-600 focus:border-transparent">
                 <option>All Locations</option>
-                <option>Kansas</option>
-                <option>California</option>
-                <option>Texas</option>
+                <option>Sambalpur</option>
+                <option>Jharsuguda</option>
+                <option>Rourkela</option>
               </select>
               <button className="flex items-center px-4 py-2 border rounded-md hover:bg-gray-50">
                 <Filter className="h-5 w-5 mr-2" />
@@ -89,7 +89,7 @@ export function Marketplace() {
                     <p className="text-gray-600">{product.location}</p>
                   </div>
                   <p className="text-2xl font-bold text-green-600">
-                    ${product.price.toFixed(2)}
+                  ₹{product.price.toFixed(2)}
                   </p>
                 </div>
                 <div className="mb-4">

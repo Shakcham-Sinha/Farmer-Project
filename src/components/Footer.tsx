@@ -27,11 +27,11 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400">
                 <Mail className="h-5 w-5 mr-2" />
-                support@farmconnect.com
+                shakchamkumarsinha@gmail.com
               </li>
               <li className="flex items-center text-gray-400">
                 <Phone className="h-5 w-5 mr-2" />
-                +1 (555) 123-4567
+                +91 8825197309
               </li>
             </ul>
           </div>

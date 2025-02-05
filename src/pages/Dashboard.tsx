@@ -55,7 +55,7 @@ export function Dashboard() {
                 <thead>
                   <tr className="border-b">
                     <th className="text-left py-3">Crop</th>
-                    <th className="text-right py-3">Price (USD/ton)</th>
+                    <th className="text-right py-3">Price (Rupees/ton)</th>
                     <th className="text-right py-3">24h Change</th>
                   </tr>
                 </thead>
@@ -63,7 +63,7 @@ export function Dashboard() {
                   {marketPrices.map((crop) => (
                     <tr key={crop.cropName} className="border-b">
                       <td className="py-3">{crop.cropName}</td>
-                      <td className="text-right">${crop.currentPrice.toFixed(2)}</td>
+                      <td className="text-right">₹{crop.currentPrice.toFixed(2)}</td>
                       <td className={`text-right ${crop.trend === 'up' ? 'text-green-600' : 'text-red-600'}`}>
                         {crop.change > 0 ? '+' : ''}{crop.change}%
                       </td>
